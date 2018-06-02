@@ -1,0 +1,305 @@
+#conditions, #actions {
+
+  margin: 20px 0;
+    padding-left: 20px;
+}
+
+#conditions > .conditional > .remove, #actions > .conditional > .remove {
+  display: none;
+  padding-left: 20px;
+}
+
+#error_message_wrapper {
+  margin: 20px 0;
+}
+
+.conditional {
+  padding-left: 60px;
+}
+hr { background-color: #BEBEBE; height: 1px; border: 0; }
+  .conditional .all-any-wrapper {
+    margin: 5px 20px 5px -60px;
+    display: -moz-inline-stack;
+    display: inline-block;
+  }
+
+/*.all-any {
+  margin-right: 10px;
+   /*background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/5dab3248584827.560835d4300e0.jpg);
+   background-size: 100% 100%;
+    font-weight: bold;
+    font-size: 15px;
+    height: 30px;
+    width: 30%;
+    color: #000;
+    margin-left: 10px;
+    background: #fff
+    border: 2px solid blue;
+    overflow: hidden;
+}*/
+
+/* Reset Select */
+select {
+   -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+ appearance: none;
+  outline: 0;
+  box-shadow: none;
+  background: #fff;
+  background-image: none;
+
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #848181;
+  cursor: pointer;
+    position: relative;
+/*    display: inline;*/
+   width: 12em;
+    height: 2em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+    border: .5px solid gray;
+
+}
+
+/* Custom Select */
+.all-any{
+  position: relative;
+  display: block;
+  width: 3em;
+  height: 2em;
+  line-height: 2;
+  text-align: left;
+  background: #fff;
+  overflow: hidden;
+  border-radius: .25em;
+  border: .5px solid gray;
+}
+
+.all-any-wrapper, .conditional, .rule {
+  margin: 10px 0;
+}
+
+.add-rule, .add-condition{
+  margin: auto 5px;
+    background: #5623b0;
+    color: #fff;
+    padding: 8px 20px;
+    text-decoration: none;
+    transition: background .5s;
+      border-radius: .25em;
+}
+ .add-rule a{
+/*all:unset;*/
+    color: #fff;
+    text-decoration: none;
+  }
+.add-condition a{
+    color: #fff;
+    text-decoration: none;
+  }
+.add-rule:hover, .add-condition:hover{
+    background: #7300e6;
+    /*cursor: pointer;*/
+    color: #fff;
+    transition: background .5s;
+}
+
+.remove {
+/*     background-image: url(http://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Dialog-Remove-icon.png);
+   background-size: 19px 17px;
+  color: transparent;
+    margin: auto 5px;
+
+    font-weight: 600;
+    text-transform: uppercase;*/
+margin: auto 5px;
+ color: #fff;
+   background-color: red;
+   border-color: #2e6da4;
+/*  color: #fff;*/
+text-decoration: none;
+
+   border-color: #2e6da4;
+ display: inline-block;
+   padding: 3px 10px;
+
+   margin-bottom: 4.5px;
+   font-size: 14px;
+   font-weight: 1000;
+   line-height: 1.42857143;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   -ms-touch-action: manipulation;
+   touch-action: manipulation;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 4px;
+      color:#fff;
+}
+
+.add{
+
+ margin: auto 5px;
+ color: #fff;
+   background-color: #5623b0;
+   border-color: #2e6da4;
+  color: #fff;
+text-decoration: none;
+
+   border-color: #2e6da4;
+ display: inline-block;
+   padding: 6px 12px;
+   margin-bottom: 0;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 1.42857143;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   -ms-touch-action: manipulation;
+   touch-action: manipulation;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 4px;
+;
+}
+
+/*.remove:hover{
+    color: transparent;
+}*/
+.rule input {
+  width: 136px;
+}
+
+.rule select {
+  margin-right: 10px;
+}
+
+.action-buttons {
+/*    margin: auto 5px;
+    background:  #5623b0;
+    color: #fff;
+    padding: 7px 20px;
+    text-decoration: none;
+    transition: background .5s;
+    width: 7.9em;
+          border-radius: .25em;
+*/
+}
+.action-buttons a{
+/*all:unset;*/
+    color: #fff;
+    text-decoration: none;
+
+}
+/*.action-buttons:hover{
+    background: #7300e6;
+    cursor: pointer;
+    transition: background .5s;
+}
+*/.add:hover{
+      background: #7300e6;
+   /* cursor: pointer;*/
+    transition: background .5s;
+}
+
+/*after clicking action button*/
+.action {
+  margin: 19px 22px;
+
+}
+
+.action .subfields, .action .subfields .field {
+  display: inline;
+}
+
+.action select, .action input, .action textarea {
+  margin-right: 10px;
+}
+
+.action textarea, .action input {
+  width: 69px;
+  margin-left: 10px;
+}
+
+.action textarea {
+  vertical-align: top;
+  height: 50px;
+}
+
+#demo-form {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 20px;
+  width: 300px;
+  background: #ddd;
+}
+
+  #demo-form div {
+    margin: 10px 0;
+  }
+
+.heading p{
+  text-align: center;
+  font-family: "Impact";
+  font-size: 52px;
+  padding-left: 40px;
+}
+
+input{
+              border-radius: .25em;
+              border: .5px solid gray;
+              height:2em;
+}
+/*.action input{
+  padding-left: 30 px;
+}*/
+
+.conditionclass{
+  padding-left: 150px;
+}
+.conditionclass  p {
+font-size: 45px;
+font-family: "Impact";
+
+
+}
+.actionclass{
+  padding-left: 220px;
+}
+.actionclass  p {
+font-size: 45px;
+font-family: "Impact";
+
+}
+.Submitbtn {
+    color: #fff;
+    font-weight: 1000px;
+    background: #159B05;
+    padding: 6px 17px;
+    text-decoration: none;
+    transition: background .5s;
+              border-radius: .35em;
+}
+.Submitbtn:hover {
+    background: #33cc33;
+    /*cursor: pointer;*/
+    transition: background .5s;
+
+}
+
